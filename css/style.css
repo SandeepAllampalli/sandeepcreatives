@@ -86,9 +86,15 @@ body::before {
 
 /* Hero section: full viewport height, align intro-container bottom */
 .hero-section {
-  height: calc(94 * var(--vh)); /* use the custom variable */
+  height: calc(var(--hero-height, 94vh));
   display: flex;
   align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: calc(var(--hero-height-mobile, 83vh));
+  }
 }
 
 .intro-container {
