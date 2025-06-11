@@ -12,12 +12,16 @@
 
 
 <body>
+
+  <div class="header-container">
+
     <div class="brand-name">sandeepcreatives</div>
     
     <div class="logo-container">
       <img src="assets/logos/logo.svg" alt="My Logo" />
     </div>
-  
+
+  </div>
 
   <main>
     <section class="hero-section">
@@ -79,7 +83,15 @@
     <section style="height: 100px;"></section>
   </main>
 
- 
+ <script>
+  function setHeroHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setHeroHeight();
+  window.addEventListener('resize', setHeroHeight);
+</script>
+
 
 
 </body>
