@@ -93,7 +93,7 @@ body::before {
 
 @media (max-width: 768px) {
   .hero-section {
-    height: calc(var(--hero-height-mobile, 83vh));
+    height: calc(var(--hero-height-mobile, 76vh));
   }
 }
 
